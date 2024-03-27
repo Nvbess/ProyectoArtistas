@@ -21,5 +21,11 @@ li {
 .Logofolio-Vol-4-hex { color: #595959; }
 .Logofolio-Vol-5-hex { color: #0D0D0D; }
 
+/* Color Theme Swatches in RGBA */
+.Logofolio-Vol-1-rgba { color: rgba(242, 242, 242, 1); }
+.Logofolio-Vol-2-rgba { color: rgba(191, 191, 191, 1); }
+.Logofolio-Vol-3-rgba { color: rgba(140, 140, 140, 1); }
+.Logofolio-Vol-4-rgba { color: rgba(89, 89, 89, 1); }
+.Logofolio-Vol-5-rgba { color: rgba(12, 12, 12, 1); }
 
 
