@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #F2F2F2; 
+}
+
+.navbar-active-color {
+    color: green;
+}
+
+.nav-link {
+    color: #595959;
+}
+
+li {
+    list-style: none;
+}
+
+/* Color Theme Swatches in Hex */
+.Logofolio-Vol-1-hex { color: #F2F2F2; }
+.Logofolio-Vol-2-hex { color: #BFBFBF; }
+.Logofolio-Vol-3-hex { color: #8C8C8C; }
+.Logofolio-Vol-4-hex { color: #595959; }
+.Logofolio-Vol-5-hex { color: #0D0D0D; }
+
+
+
