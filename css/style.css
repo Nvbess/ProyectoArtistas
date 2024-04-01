@@ -1,18 +1,31 @@
-.navbar {
-    background-color: #F2F2F2; 
-}
+/* COLORES PRINCIPALES */
+.Logofolio-Vol-1-hex { color: #F2F2F2; }
+.Logofolio-Vol-2-hex { color: #BFBFBF; }
+.Logofolio-Vol-3-hex { color: #8C8C8C; }
+.Logofolio-Vol-4-hex { color: #595959; }
+.Logofolio-Vol-5-hex { color: #0D0D0D; }
 
-.navbar-active-color {
-    color: green;
-}
+.Logofolio-Vol-1-rgba { color: rgba(242, 242, 242, 1); }
+.Logofolio-Vol-2-rgba { color: rgba(191, 191, 191, 1); }
+.Logofolio-Vol-3-rgba { color: rgba(140, 140, 140, 1); }
+.Logofolio-Vol-4-rgba { color: rgba(89, 89, 89, 1); }
+.Logofolio-Vol-5-rgba { color: rgba(12, 12, 12, 1); }
 
-.nav-link {
-    color: #595959;
-}
-
-li {
+/* NAVBAR */
+#navbar {
+    background-color: #F2F2F2;
     list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
 }
+
+@media(max-width:600px) {
+    
+}
+
 
 .form-check-input:checked{
     background-color: #0D0D0D !important;
@@ -60,27 +73,6 @@ li {
     }
 }
 
-.dios-contenido{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-/* Color Theme Swatches in Hex */
-.Logofolio-Vol-1-hex { color: #F2F2F2; }
-.Logofolio-Vol-2-hex { color: #BFBFBF; }
-.Logofolio-Vol-3-hex { color: #8C8C8C; }
-.Logofolio-Vol-4-hex { color: #595959; }
-.Logofolio-Vol-5-hex { color: #0D0D0D; }
 
-/* Color Theme Swatches in RGBA */
-.Logofolio-Vol-1-rgba { color: rgba(242, 242, 242, 1); }
-.Logofolio-Vol-2-rgba { color: rgba(191, 191, 191, 1); }
-.Logofolio-Vol-3-rgba { color: rgba(140, 140, 140, 1); }
-.Logofolio-Vol-4-rgba { color: rgba(89, 89, 89, 1); }
-.Logofolio-Vol-5-rgba { color: rgba(12, 12, 12, 1); }
 
 
