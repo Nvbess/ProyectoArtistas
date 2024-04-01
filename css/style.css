@@ -11,6 +11,10 @@
 .Logofolio-Vol-4-rgba { color: rgba(89, 89, 89, 1); }
 .Logofolio-Vol-5-rgba { color: rgba(12, 12, 12, 1); }
 
+* {
+    font-family: "HelveticaNeueLight", Arial, Helvetica, sans-serif;
+}
+
 /* NAVBAR */
 #navbar {
     background-color: #F2F2F2;
@@ -20,12 +24,55 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex; 
+    font-size: 17px;
 }
 
-@media(max-width:600px) {
-    
+#buscar {
+    margin-right: 2%;
 }
 
+#ingresar {
+    margin-right: 1%;
+    background-color: #F2F2F2;
+}
+
+#ingresar .dropdown-menu{
+    left: auto;
+    right: 0;
+    background-color: #F2F2F2; 
+}
+
+#ingresar .dropdown-item:active {
+    background-color: #0D0D0D;
+}
+
+#carousel .carousel-item img {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 920px;
+    max-width: none;
+    object-fit: cover;
+}
+
+@media(max-width:1000px) {
+    #navbar {
+        font-size: 20px;
+    }
+
+    #carousel .carousel-item img {
+        height: 300px;
+    }
+
+    #ingresar .dropdown-menu {
+        left: auto;
+        right: auto;
+    }
+
+    #buscar {
+        padding: 1%;
+    }
+}
 
 .form-check-input:checked{
     background-color: #0D0D0D !important;
@@ -37,42 +84,5 @@
     border: 0;
     box-shadow: 0 0 0 0.1rem #595959 !important;
  }
-
- #demo{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
- }
- 
-@media(max-width: 800px){
-    #demo{
-        max-width: fit-content;
-        min-width: fit-content;
-    }
-}
-
-@media(max-width:800px){
-    .banner{
-        min-height: 600px;
-    }
-    .banner h1{
-        margin-top: 70%;
-        font-size: 30px;
-    }
-    .banner h2{
-        font-size: 20px;
-    }
-    .banner a.banner-btn{
-        font-size: 15px;
-        padding: 10px 25px;
-    }
-}
-
-
 
 
