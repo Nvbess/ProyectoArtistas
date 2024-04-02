@@ -101,6 +101,8 @@
     #carousel .carousel-item img {
         min-height: 400px;
         height: auto;
+        max-width: none;
+        object-fit: cover;
     }
 
     #ingresar .dropdown-menu {
