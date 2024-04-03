@@ -13,6 +13,7 @@
 
 * {
     font-family: "HelveticaNeueLight", Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 /* NAVBAR */
@@ -92,8 +93,7 @@
     -ms-transform: translate(-50%, -50%);
   }
 
-
-@media(max-width:1000px) {
+  @media(max-width:1000px) {
     #navbar {
         font-size: 20px;
     }
@@ -117,6 +117,30 @@
     #carousel .carousel-item .text {
         font-size: 32px;
     }
+}
+
+
+/* COLECCIONES*/
+#container-col {
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
+    flex-wrap: wrap;
+}
+#container-col .card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 0.1;
+}
+
+#container-col .card-img-top {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .form-check-input:checked{
