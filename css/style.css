@@ -156,7 +156,7 @@
 
 /* CONTAINER ARTISTAS */
 
- #container {
+ #container-art {
     height: 600px;
     background-color: #595959;
     background-image: url('../img/Fondo3.jpg');
@@ -165,7 +165,7 @@
     background-repeat: no-repeat;
 }
 
-#container h3 {
+#container-art h3 {
     text-align: center;
     margin-top: 60px;
     font-size: 70px;
@@ -174,7 +174,7 @@
     margin-bottom: 50px;
 }
 
-#container ul {
+#container-art ul {
     list-style: none;
 }
 
@@ -214,7 +214,7 @@
     border: 0;
 }
 
-#container .card .overlay-textimg{
+#container-art .card .overlay-textimg{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -227,11 +227,11 @@
     background-color: rgba(12, 12, 12, 1);
 }
 
-#container .card:hover .overlay-textimg{
+#container-art .card:hover .overlay-textimg{
     opacity: 0.5;
 }
 
-#container .card .texto a {
+#container-art .card .texto a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
