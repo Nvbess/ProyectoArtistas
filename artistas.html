@@ -25,7 +25,7 @@
             <a class="nav-link" href="artistas.html">Artistas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#CATEGORIAS#">Categorias</a>
+            <a class="nav-link" href="colecciones.html">Colecciones</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -48,61 +48,102 @@
     </div>
   </nav>
   <!-- FIN NAVBAR -->
-  <div id="container-art">
-    <h3 class="mb-4 display-5 text-center">Artistas</h3>
-    <ul class="Artistas-fotos">
-      <li>
-        <div id="artistas-carta" class="card-art">
-          <img src="img/Gracia_Barrios.jpg" class="rounded-circle" alt="Cinque Terre">
-          <div class="overlay-textimg">
-            <div class="texto"><a href="Artista1.html">Ver Más</a></div>
-          </div>
+  <!-- HEADER -->
+  <section id="header" class="bg-light py-5 py-md-5 mt-5">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-5 text-center">Artistas</h2>
+          <p class="text-secondary mb-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsa quae dolore in consequatur odit dicta sapiente necessitatibus quis veniam molestiae?
+          </p>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contenido artista -->
+  <section id="container-artista" class="container-col list-group list-group-horizontal">
+    <div class="row row-cols-md-4">
+      <div class="carta-artista">
+        <div class="card " style="width: fit-content">
+          <a href="Artista1.html"><img src="img/Gracia_Barrios.jpg" class="card-img-top" alt=""></a>
           <div class="card-body">
-            <h4 class="card-title">Gracia Barrios</h4>
-            <p class="card-text"> fue una pintora chilena, galardonada con el Premio Nacional de Artes Plásticas en 2011
+            <h5 class="card-title">Gracia Barrios</h5>
+            <p class="card-text">Pintora Chilena</p>
+            <a href="Artista1.html" class="btn btn-outline-dark justify-content-center">Más Información</a>
+          </div>
+        </div>
+      </div>
+      <div class="carta-artista">
+        <div class="card" style="width: fit-content">
+          <a href="Artista1.html"><img src="img/roberto-matta.jpg" class="card-img-top" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Roberto Matta</h5>
+            <p class="card-text">Arquitecto Pintor y Poeta Chileno</p>
+            <a href="Artista1.html" class="btn btn-outline-dark justify-content-center">Más Información</a>
+          </div>
+        </div>
+      </div>
+      <div class="carta-artista">
+        <div class="card " style="width: fit-content">
+          <a href="Artista1.html"><img src="img/Claude_Monet_1899_Nadar_crop.jpg" class="card-img-top" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Claude Monet</h5>
+            <p class="card-text">Pintor Francés</p>
+            <a href="Artista1.html" class="btn btn-outline-dark justify-content-center">Más Información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carta-artista">
+        <div class="card " style="width: fit-content">
+          <a href="Artista1.html"><img src="img/Joan_Miro_(cropped).jpg" class="card-img-top" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Joan Miró</h5>
+            <p class="card-text">Pintor y Escultor Español</p>
+            <a href="#" class="btn btn-outline-dark justify-content-center">Más Información</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- MODAL INGRESO DE USUARIO -->
+  <section class="ingreso">
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content px-2 text-center">
+          <!-- Modal body -->
+          <form>
+            <img class="mb-3 mt-4" src="img/LogoGAM.png" alt="" width="84" height="35" />
+            <h2 class="h3 mb-3 fw-normal">Iniciar Sesión</h2>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mt-1">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" />
+              <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <div class="form-check my-3 text-start">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Recuerdame
+              </label>
+            </div>
+            <button class="btn btn-dark w-100 py-2" type="submit">
+              Ingresar
+            </button>
+            <p class="mt-5 mb-3 text-body-secondary">
+              © 2024 Colectivo Grupo Cero
             </p>
-          </div>
+          </form>
         </div>
-      </li>
-      <li>
-        <div id="artistas-carta" class="card-art">
-          <img src="img/roberto-matta.jpg" class="rounded-circle" alt="Cinque Terre">
-          <div class="overlay-textimg">
-            <div class="texto"><a href="Artista1.html">Ver Más</a></div>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Roberto Matta</h4>
-            <p class="card-text">fue un arquitecto, pintor y poeta chileno, considerado el último representante del
-              surrealismo.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div id="artistas-carta" class="card-art">
-          <img src="img/Claude_Monet_1899_Nadar_crop.jpg" class="rounded-circle" alt="Cinque Terre">
-          <div class="overlay-textimg">
-            <div class="texto"><a href="Artista1.html">Ver Más</a></div>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Claude Monet</h4>
-            <p class="card-text">fue un pintor francés, uno de los creadores del impresionismo.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div id="artistas-carta" class="card-art">
-          <img src="img/Joan_Miro_(cropped).jpg" class="rounded-circle" alt="Cinque Terre">
-          <div class="overlay-textimg">
-            <div class="texto"><a href="Artista1.html">Ver Más</a></div>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Joan Miró</h4>
-            <p class="card-text">fue un pintor, escultor, grabador y ceramista español.</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </div>
+  </section>
   <!-- FOOTER  -->
   <footer id="footer">
     <div class="container">

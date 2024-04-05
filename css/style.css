@@ -206,109 +206,42 @@
     box-shadow: 0 0 0 0.1rem #595959 !important;
  }
 
-
 /* CONTAINER ARTISTAS */
- #container-art {
-    height: 600px;
-    background-color: #595959;
-    background-image: url('../img/Fondo3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#container-art h3 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 70px;
-    color: #0D0D0D;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-#container-art ul {
+#container-artista{
     list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
+    flex-wrap: wrap;
+    padding-inline: 260px;
+    padding-top: 50px;
 }
 
-#artistas-carta {
-    background-color: transparent;
+#container-artista .card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 0.1;
+}
+
+#container-artista .card-img-top {
     width: 300px;
-    height: 360px;
-}
-
-#artistas-carta div {
-    text-align: center;
-    color: #0D0D0D;
-}
-
-.Artistas-fotos li {
-    display: inline-block;
-    margin-left: 100px;
-    margin-right: 40px;
-}
-
-#artistas-carta img {
-    width: 230px;
-    height: 200px;
-    display: block;
-    margin: 0 auto;
-}
-
-.card-art {
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 300px;
-    display: inline-block;
-    vertical-align: top;
-    border: 0;
-}
-
-#container-art .card .overlay-textimg{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .7s ease;
-    background-color: rgba(12, 12, 12, 1);
-}
-
-#container-art .card:hover .overlay-textimg{
-    opacity: 0.5;
-}
-
-#container-art .card .texto a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    opacity: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 /* PAGINA DEL ARTISTA */
 
 #artista-uno {
     height: 700px;
-    background-color: antiquewhite;
-    margin-top: 58px;
+    padding-inline: 50px;
 }
 
 #artista-uno li{
     padding: 20px;
-    height: 300px;
+    height: 500px;
     background-size: cover;
     background-clip: content-box;
     background-position: center;
@@ -318,7 +251,7 @@
     background-image: url("../img/Gracia-Barrios2.jpg");
     width: 400px;
     height: 1000px;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .artista-der{
@@ -337,8 +270,6 @@
     padding: 0;
     margin: 0;
 }
-
-
 
 @media(max-width:1000px) {
     #navbar {
