@@ -12,11 +12,13 @@
 .Logofolio-Vol-5-rgba { color: rgba(12, 12, 12, 1); }
 
 * {
-    font-family: "HelveticaNeueLight", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     list-style: none;
 }
 
-/* NAVBAR */
+/*---------------------------------------------------------------------*/
+/* ------------------------- NAVBAR E INDEX -------------------------- */
+/*---------------------------------------------------------------------*/
 #navbar {
     background-color: #F2F2F2;
     list-style: none;
@@ -100,7 +102,10 @@
   }
 
 
-/* COLECCIONES*/
+/*---------------------------------------------------------------------*/
+/* ----------------------PAGINA DE COLECCIONES ----------------------- */
+/*---------------------------------------------------------------------*/
+
 #container-col {
     list-style: none;
     display: -webkit-flex;
@@ -168,11 +173,6 @@
 .checklist li a {
     color: #676a74;
     text-decoration: none;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
 }
 .checklist li span {
     float: left;
@@ -206,7 +206,10 @@
     box-shadow: 0 0 0 0.1rem #595959 !important;
  }
 
-/* CONTAINER ARTISTAS */
+/*---------------------------------------------------------------------*/
+/* -------------------------PAGINA DE ARTISTAS-------------------------*/
+/*---------------------------------------------------------------------*/
+
 #container-artista{
     list-style: none;
     display: -webkit-flex;
@@ -232,32 +235,45 @@
     object-fit: cover;
 }
 
-/* PAGINA DEL ARTISTA */
+
+
+/*---------------------------------------------------------------------*/
+/* ---------------- PAGINA BIOGRAFIA ARTISTAS ---------------- */
+/*---------------------------------------------------------------------*/
 
 #artista-uno {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
+    flex-wrap: wrap;
     height: 700px;
-    padding-inline: 50px;
+    padding-inline: 150px;
 }
 
 #artista-uno li{
     padding: 20px;
     height: 500px;
     background-size: cover;
-    background-clip: content-box;
     background-position: center;
+}
+
+#artista-uno .card {
+    border: 0;
+    padding: 2%;
+}
+
+#artista-uno .col-art {
+    padding-top: 40px;
+    padding-left: 40px;
 }
 
 .artista-izq{
     background-image: url("../img/Gracia-Barrios2.jpg");
     width: 400px;
     height: 1000px;
-    margin-top: 40px;
-}
-
-.artista-der{
-    flex: 1;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 50px;
 }
 
 .contenido-artista p{
@@ -267,11 +283,96 @@
 .artista-uno .contenido-artista {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 1px;
 }
 
-@media(max-width:1000px) {
+/*---------------------------------------------------------------------*/
+/* ---------------- PAGINA DESCRIPCIÓN DE COLECCIONES ---------------- */
+/*---------------------------------------------------------------------*/
+
+#cont-uno .card{
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    max-width: fit-content;
+    text-align: justify;
+    border: 0;
+}
+
+#cont-uno .card img {
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+#cont-uno .card .card-title{
+    margin-left: 20px;
+}
+
+#cont-uno .card .card-text-small{
+    margin-left: 20px;
+}
+
+#cont-uno .card .card-text {
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+#cont-uno .card h4 {
+    float: inline-end;
+    margin-right: 20px;
+}
+
+#cont-uno .btn {
+    margin-right: 15px;
+    float: right;
+}
+
+@media screen and (max-width: 1200px){
+    #cont-uno .card{
+        max-width: fit-content;
+        text-align: justify;
+        border: 1;
+    }
+
+    #cont-uno .card .card-text {
+        display: none;
+        text-align: center;
+    }
+
+    #cont-uno .btn {
+        margin-bottom: 20px;
+    }
+}
+
+/*---------------------------------------------------------------------*/
+                /* ---------------- CARRITO ---------------- */
+/*---------------------------------------------------------------------*/
+
+#carrito-c h1,h3{
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 35px 0 0px 0;
+    letter-spacing: 1px;
+    clear: both;
+}
+
+#carrito-c h5 {
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 35px 0 0px 0;
+    letter-spacing: 1px;
+    clear: both;
+}
+
+/*---------------------------------------------------------------------*/
+                /* ---------------- MEDIA ---------------- */
+/*---------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
     #navbar {
         font-size: 20px;
     }
@@ -301,7 +402,9 @@
     }
 
     #container-col {
+        justify-content: center;
         padding-left: 100px;
+        padding-right: 60px;
         padding-top: 50px;
     }
 
@@ -309,4 +412,30 @@
         padding: 20px;
         margin-left: auto;
     }
+    
+    #artista-uno .contenido-artista {
+        display: wrap;
+    }
+
+    #artista-uno {
+        height: 700px;
+    }
+
+    .artista-uno .contenido-artista {
+        align-items: center;
+        justify-content: center;
+        display: contents;
+        padding-left: 100px;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+
+    #container-artista {
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
+
+    
 }
