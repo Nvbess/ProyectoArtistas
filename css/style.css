@@ -28,12 +28,18 @@
     font-size: 17px;
 }
 
+.img-cart {
+    width: 25px;
+    margin-right: 8px;
+}
+
 #buscar {
     margin-right: 2%;
 }
 
 #ingresar {
-    margin-right: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
     background-color: #F2F2F2;
 }
 
@@ -93,32 +99,6 @@
     -ms-transform: translate(-50%, -50%);
   }
 
-  @media(max-width:1000px) {
-    #navbar {
-        font-size: 20px;
-    }
-
-    #carousel .carousel-item img {
-        min-height: 400px;
-        height: auto;
-        max-width: none;
-        object-fit: cover;
-    }
-
-    #ingresar .dropdown-menu {
-        left: auto;
-        right: auto;
-    }
-
-    #buscar {
-        padding: 1%;
-    }
-
-    #carousel .carousel-item .text {
-        font-size: 32px;
-    }
-}
-
 
 /* COLECCIONES*/
 #container-col {
@@ -129,6 +109,8 @@
     display: -o-flex;
     display: flex; 
     flex-wrap: wrap;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 #container-col .card {
     margin-right: 30px;
@@ -143,6 +125,76 @@
     object-fit: cover;
 }
 
+#sidebar-col {
+    float: left;
+    background: #fff;
+    width: 300px;
+    padding: 13px 13px 0px 45px;
+    height: 700px;
+    border-right: 2px solid #eee;
+}
+
+#sidebar-col h3 {
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 35px 0 10px 0;
+    letter-spacing: 1px;
+    clear: both;
+}
+
+#sidebar-col .checklist ul li {
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    padding: 7px 0 7px 23px;
+}
+
+#sidebar-col .colors ul .sizes ul {
+    float: left;
+    width: 130px;
+}
+
+#cart-side .empty {
+    font-style: italic;
+    color: #a0a3ab;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.checklist li a {
+    color: #676a74;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+.checklist li span {
+    float: left;
+    width: 11px;
+    height: 11px;
+    margin-left: -23px;
+    margin-top: 4px;
+    border: 1px solid #d1d3d7;
+    position: relative;
+}
+
+.colors ul li {
+    padding-left: 21px;
+}
+.checklist ul li {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    padding: 7px 0 7px 23px;
+    padding-left: 23px;
+}
+
 .form-check-input:checked{
     background-color: #0D0D0D !important;
     border: 0;
@@ -154,8 +206,8 @@
     box-shadow: 0 0 0 0.1rem #595959 !important;
  }
 
-/* CONTAINER ARTISTAS */
 
+/* CONTAINER ARTISTAS */
  #container-art {
     height: 600px;
     background-color: #595959;
@@ -202,7 +254,7 @@
     margin: 0 auto;
 }
 
-.card {
+.card-art {
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -244,4 +296,86 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+/* PAGINA DEL ARTISTA */
+
+#artista-uno {
+    height: 700px;
+    background-color: antiquewhite;
+    margin-top: 58px;
+}
+
+#artista-uno li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.artista-izq{
+    background-image: url("../img/Gracia-Barrios2.jpg");
+    width: 400px;
+    height: 1000px;
+    margin-top: 120px;
+}
+
+.artista-der{
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contenido-artista p{
+    text-align: justify;
+}
+
+.artista-uno .contenido-artista {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media(max-width:1000px) {
+    #navbar {
+        font-size: 20px;
+    }
+
+    #carousel .carousel-item img {
+        min-height: 400px;
+        height: auto;
+        max-width: none;
+        object-fit: cover;
+    }
+
+    #ingresar .dropdown-menu {
+        left: auto;
+        right: auto;
+    }
+
+    #buscar {
+        padding: 1%;
+    }
+
+    #carousel .carousel-item .text {
+        font-size: 32px;
+    }
+
+    #sidebar-col {
+        display: none;
+    }
+
+    #container-col {
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+
+    #pagination {
+        padding: 20px;
+        margin-left: auto;
+    }
 }
