@@ -12,193 +12,177 @@
   <body>
     <!-- INICIO NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-md fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/LogoGAM.png" alt="Logo" width="80" class="d-inline-block align-text-top" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="mynavbar" class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="artistas.html">Artistas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#CATEGORIAS#">Categorias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <form id="buscar" class="d-flex">
-            <input class="form-control me-1" type="text" placeholder="Artistas, obras, etc" />
-            <button class="btn btn-dark" type="button">Buscar</button>
-          </form>
-          <li id="ingresar" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ingresar</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar Sesión</a>
-              </li>
-              <li><a class="dropdown-item" href="#"> Crear Cuenta</a></li>
-            </ul>
-          </li>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/LogoGAM.png" alt="Logo" width="80" class="d-inline-block align-text-top" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mynavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colecciones.html">Colecciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form id="buscar" class="d-flex">
+                    <input class="form-control me-1" type="text" placeholder="Artistas, obras, etc" />
+                    <button class="btn btn-dark" type="button">Buscar</button>
+                </form>
+                <li id="ingresar" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ingresar</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar
+                                Sesión</a>
+                        </li>
+                        <li><a class="dropdown-item" href="registro.html"> Crear Cuenta</a></li>
+                    </ul>
+                </li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="carro.html"><img src="img/shopping-cart.png" class="img-cart"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    <!-- CONTENIDO -->
-    <section class="bg-light py-3 py-md-5 mt-5">
+    <!-- CONTENIDO REGISTRO -->
+    <section class="bg-light py-5 py-md-5 mt-5">
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <h2 class="mb-4 display-5 text-center">Contacto</h2>
+            <div class="row col-12 justify-content-md-center">
+                <div class="col-12 col-md-8 col-sm-12 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-4 display-5 text-center">Regístrate</h2>
                     <p class="text-secondary mb-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur fugit quidem accusamus accusantium rem atque voluptates sit dolorem nesciunt quae!
+                        Ipsa quae dolore in consequatur odit dicta sapiente necessitatibus quis veniam molestiae?
                     </p>
                     <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row justify-content-lg-center">
                 <div class="col-12 col-lg-9">
                     <div class="bg-white border rounded shadow-sm overflow-hidden">
-                        <form action="#!">
+                        <form action="index_usuario.html" method="get">   <!-- action que debe redirigir a la pagina USUARIO -->
                             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                                 <div class="col-12">
-                                    <label for="fullname" class="form-label">Nombres <span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="fullname" name="fullname" value=""
-                                        required>
+                                    <label for="fullname" class="form-label">Nombre <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" value=""required>
                                 </div>
-                                <div class="">
-                                    <div class="col-12 col-md-6">
-                                        <label for="fullname" class="form-label">Apellidos <span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="fullname" name="fullname" value=""
-                                            required>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label for="email" class="form-label">Email <span
-                                                class="text-danger">*</span></label>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
                                                     fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                                     <path
                                                         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                                                 </svg>
                                             </span>
-                                            <input type="email" class="form-control" id="email" name="email" value=""
-                                                required>
+                                            <input type="email" class="form-control" id="email" name="email" value=""required>
                                         </div>
-                                    </div>
-                                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                                        <div class="col-12 col-md-6">
-                                            <label>Password</label>
-                                            <input type="password" name="pwd" id="pwd" class="input-field form-control"
-                                                value="" required>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <label>Repetir Password</label>
-                                            <input type="password" name="cpwd" id="cpwd"
-                                                class="input-field form-control" value="" required>
-                                        </div>
-                                    </div>
-
                                 </div>
-                                <div class="col-md-6 mb-4">
-
-                                    <h6 class="mb-2 pb-1">Gender: </h6>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="femaleGender" value="option1" checked />
-                                        <label class="form-check-label" for="femaleGender">Female</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="maleGender" value="option2" />
-                                        <label class="form-check-label" for="maleGender">Male</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="otherGender" value="option3" />
-                                        <label class="form-check-label" for="otherGender">Other</label>
-                                    </div>
-
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label">Contraseña <span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="fullname" name="fullname" value=""required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label">Repetir Contraseña <span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="fullname" name="fullname" value=""required>
                                 </div>
                             </div>
-
-
-                            <div class="col-12">
+                            </div>
+                            <div class="col-12 mt-2">
                                 <div class="d-grid">
-                                    <button class="btn btn-dark btn-lg" type="submit">Registrar</button>
+                                    <button class="btn btn-dark btn-lg" type="submit" data-bs-toggle="modal" data-bs-target="#myModal-3">Regístrate</button>
                                 </div>
                             </div>
-                    </div>
-                    </form>
+                        </div>
+                        </form>
                 </div>
             </div>
         </div>
         </div>
     </section>
     <!-- MODAL INGRESO DE USUARIO -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content px-2 text-center">
+    <section class="ingreso">
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content px-2 text-center">
                 <!-- Modal body -->
                 <form>
+                    <a href="adminlogin.html">
                     <img class="mb-3 mt-4" src="img/LogoGAM.png" alt="" width="84" height="35" />
+                    </a>
                     <h2 class="h3 mb-3 fw-normal">Iniciar Sesión</h2>
 
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                        <label for="floatingInput">Email</label>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                    <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mt-1">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" />
-                        <label for="floatingPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" />
+                    <label for="floatingPassword">Contraseña</label>
                     </div>
 
                     <div class="form-check my-3 text-start">
-                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" />
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Recuerdame
-                        </label>
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Recuerdame
+                    </label>
                     </div>
                     <button class="btn btn-dark w-100 py-2" type="submit">
-                        Ingresar
+                    Ingresar
                     </button>
                     <p class="mt-5 mb-3 text-body-secondary">
-                        © 2024 Colectivo Grupo Cero
+                    © 2024 Colectivo Grupo Cero
                     </p>
                 </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- MENSAJE-->
+    <section>
+        <div class="modal" id="myModal-3" style="text-align: center;">
+            <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title" style="text-align: center;">Registro Completo</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                Se ha registrado de manera exitosa.
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER  -->
     <div id="footer" class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    <a href="index.html" class="nav-link px-2 text-muted">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-muted">Artistas</a>
+                    <a href="artistas.html" class="nav-link px-2 text-muted">Artistas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-muted">Obras</a>
+                    <a href="colecciones.html" class="nav-link px-2 text-muted">Colecciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-muted">Contacto</a>
+                    <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
                 </li>
             </ul>
             <p class="text-center text-muted">© 2024 Colectivo Grupo Cero</p>

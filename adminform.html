@@ -26,7 +26,7 @@
                         <a class="nav-link" href="adminupdate.html">Administrar Cuentas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="adminsolicitud.html">Solicitudes</a>
+                        <a class="nav-link" href="javascript:void(0)">Solicitudes</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -35,7 +35,29 @@
             </div>
         </div>
     </nav>
-
+    <form id="admin-form">
+        <div class="form-row">
+            <h2>Solicitud de producto</h2>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Username: usuario1</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Producto: Cuadro</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Descripcion: Cuadro de Roberto Matta</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Precio: $5.000.000</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" formaction="admin.html">Aceptar</button>
+        <button type="submit" class="btn btn-primary" formaction="adminform2.html">Rechazar</button>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
