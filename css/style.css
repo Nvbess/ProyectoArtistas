@@ -372,9 +372,13 @@
                 /* ---------------- MEDIA ---------------- */
 /*---------------------------------------------------------------------*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     #navbar {
         font-size: 20px;
+    }
+
+    #navbar .img-cart {
+        float: right;
     }
 
     #carousel .carousel-item img {

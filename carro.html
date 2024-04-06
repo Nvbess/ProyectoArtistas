@@ -68,11 +68,9 @@
                                             <h6 class="mb-0 text-muted">1 items</h6>
                                         </div>
                                         <hr class="my-4">
-
                                         <div class="row mb-4 d-flex justify-content-between align-items-center">
                                             <div class="col-md-2 col-lg-2 col-xl-2">
-                                                <img src="img/Espejo-de-Cronos.png"
-                                                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                                <img src="img/Espejo-de-Cronos.png" class="img-fluid rounded-3">
                                             </div>
                                             <div class="col-md-3 col-lg-3 col-xl-3">
                                                 <h6 class="text-muted">Pintura</h6>
@@ -81,14 +79,11 @@
                                             <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                                                 <h6 class="mb-0">$12.000.000</h6>
                                             </div>
-                                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                            </div>
                                         </div>
                                         <hr class="my-4">
 
                                         <div class="pt-5">
-                                            <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                            <h6 class="mb-0"><a href="index.html" class="text-body"><i
                                                         class="fas fa-long-arrow-alt-left me-2"></i>Volver</a>
                                             </h6>
                                         </div>
@@ -122,9 +117,9 @@
                                             <h5>$12.000.000</h5>
                                         </div>
 
-                                        <button type="button" style="float: right;" class="btn btn-dark btn-block btn-lg mb-5"
-                                            data-mdb-ripple-color="dark">Comprar</button>
-
+                                        <button type="button" style="float: right;"
+                                            class="btn btn-dark btn-block btn-lg mb-5"
+                                            data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
                                     </div>
                                 </div>
                             </div>
@@ -134,28 +129,55 @@
             </div>
         </div>
     </section>
-      <!-- FOOTER  -->
+    <!-- ADVERTENCIA -->
+    <section>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Error 404</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                Actualmente no se encuentra disponible la opción de comprar.
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir</button>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER  -->
     <footer id="footer">
         <div class="container">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link px-2 text-muted">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="artistas.html" class="nav-link px-2 text-muted">Artistas</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Colecciones</a>
-            </li>
-            <li class="nav-item">
-                <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
-            </li>
-            </ul>
-            <p class="text-center text-muted">© 2024 Colectivo Grupo Cero</p>
-        </footer>
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="artistas.html" class="nav-link px-2 text-muted">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Colecciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
+                    </li>
+                </ul>
+                <p class="text-center text-muted">© 2024 Colectivo Grupo Cero</p>
+            </footer>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
