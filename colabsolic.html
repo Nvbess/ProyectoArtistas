@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>Colaborador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -13,20 +13,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="admin.html">ADMIN</a>
-            <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <a class="navbar-brand" href="colab.html">COLAB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="admincreate.html">Crear Cuentas</a>
+                        <a class="nav-link" href="colabcreate.html">Crear Solicitud</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="adminupdate.html">Administrar Cuentas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="adminsolicitud.html">Solicitudes</a>
+                        <a class="nav-link" href="colabsolic.html">Ver Solicitudes</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -36,39 +33,38 @@
         </div>
     </nav>
     <div class="container mt-3">
-        <h2>Solicitud de productos</h2>            
+        <h2>Solicitudes Creadas</h2>            
         <table class="table table-dark table-hover">
           <thead>
             <tr>
-              <th>Username</th>
-              <th>Id Producto</th>
-              <th>Nombre Producto</th>
-              <th></th>
+              <th>ID  Solicitud</th>
+              <th>Titulo</th>
+              <th>Estado Solicitud</th>
+              <th> Ver Solicitud</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Cooperativo1</td>
               <td>id1</td>
-              <td>Nombre1</td>
-              <td><a href="adminform.html"><button>Ver</button></a></td>
+              <td>Nombre Obra</td>
+              <td>Pendiente</td>
+              <td><a href="colabform.html"><button>Ver</button></a></td>
             </tr>
             <tr>
-              <td>Cooperativo2</td>
               <td>id2</td>
-              <td>Nombre2</td>
-              <td><a href="adminform.html"><button>Ver</button></a></td>
+              <td>Nombre Obra</td>
+              <td style="color: greenyellow;">Aprobada</td>
+              <td><a href="colabform.html"><button>Ver</button></a></td>
             </tr>
             <tr>
-              <td>Cooperativo3</td>
               <td>id3</td>
-              <td>Nombre3</td>
-              <td><a href="adminform.html"><button>Ver</button></a></td>
+              <td>Nombre Obra</td>
+              <td style="color: red;">Rechazada</td>
+              <td><a href="colabform.html"><button>Ver</button></a></td>
             </tr>
           </tbody>
         </table>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
